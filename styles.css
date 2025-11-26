@@ -1,0 +1,143 @@
+:root {
+    --bg-color: #1e1e2f;
+    --accent-color: #7C3AED;
+    --text-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.12);
+    --spacing: 8px;
+    --border-radius: 12px;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(30, 30, 47, 0.8);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+section {
+    padding: 6rem 2rem;
+}
+
+#hero {
+    text-align: center;
+}
+
+.cta {
+    display: inline-block;
+    margin: var(--spacing);
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transition: transform 0.2s ease;
+}
+
+.cta:hover {
+    transform: scale(1.05);
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    margin: 20px auto;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chip {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: var(--spacing);
+    margin: var(--spacing);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing);
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: var(--spacing);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 1rem;
+    width: 10px;
+    height: 10px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+.contact-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: var(--spacing);
+    text-align: center;
+}
+
+.social-icons a {
+    margin: var(--spacing);
+    color: var(--text-color);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}

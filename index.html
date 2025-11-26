@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nexus Web Lab - Software Engineer Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Bilal Mohammed</h1>
+            <h2>Software Engineer • Web & Systems</h2>
+            <p>I design resilient systems and craft delightful web experiences.</p>
+            <a href="#projects" class="cta primary">View Projects</a>
+            <a href="assets/Bilal Bello Mohammed's cv.pdf" class="cta secondary">Download CV</a>
+        </section>
+
+        <section id="about">
+            <div class="profile-image"><img src="assets/bmb.jpg" alt="profile image"></div>
+            <p>Short bio about yourself, highlighting your skills and experiences.</p>
+            <div class="skills">
+                <span class="chip">Languages</span>
+                <span class="chip">Frameworks</span>
+                <span class="chip">Tools</span>
+                <span class="chip">Cloud/DevOps</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Management Systems</h3>
+                    <ul>
+                        <li>School Management System</li>
+                        <li>Drug Management System</li>
+                        <li>Hostel Management System</li>
+                    </ul>
+                    <p>Tech Stack: HTML, CSS, JS, MySQL, PHP</p>
+                    <a href="#" class="link">Live</a>
+                    <a href="https://github.com/Bmbnetwork" class="link">GitHub</a>
+                </div>
+                <!-- Repeat for more projects -->
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Computer Operator</h3>
+                    <p>August 2024 - June 2025</p>
+                    <ul>
+                        <li>Created Functional Website</li>
+                        <li>Navigate an easy means for customer services</li>
+                        <li>Acquired Certificates in PC Building and Cyber Awareness</li>
+                    </ul>
+                </div>
+                <!-- Repeat for more experiences -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-card">
+                <a href="mailto:your.bmbnetwork1@gmail.com">bmbnetwork1@gmail.com</a>
+                <p>Location</p>
+                <a href="assets/Bilal Bello Mohammed's cv.pdf" class="cta">Download CV</a>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Web.Developer.Nig">Facebook</a>
+                    <a href="https://www.instagram.com/web.developer.nig?utm_source=qr&igsh=ZGYyMGFjdDh3d21t">Instagram</a>
+                    <a href="https://www.tiktok.com/@northreigns?_r=1&_t=ZS-91iecAsgUDc">Tiktok</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Nexus Web Lab. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
